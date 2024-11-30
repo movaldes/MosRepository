@@ -1,7 +1,7 @@
 # Import necessary libraries
 import streamlit as st
 import os
-from together import together
+from together import Together
 
 
 os.environ['TOGETHER_API_KEY'] = st.secrets["TOGETHER_API_KEY"]
