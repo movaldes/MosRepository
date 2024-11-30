@@ -2,22 +2,8 @@
 import streamlit as st
 import os
 from together import Together
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
-
-# Access the environment variable
-together_api_key = os.getenv('TOGETHER_API_KEY')
-
-if together_api_key:
-    # st.secrets["TOGETHER_API_KEY"] = together_api_key
-    os.environ['TOGETHER_API_KEY'] = together_api_key
-else:
-    os.environ['TOGETHER_API_KEY'] = st.secrets["TOGETHER_API_KEY"]
-    
-
-          
+os.environ['TOGETHER_API_KEY'] = st.secrets["TOGETHER_API_KEY"]
 
 # Initialize Together client
 client = Together()
