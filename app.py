@@ -1,5 +1,4 @@
 # Import necessary libraries
-!pip install together
 import streamlit as st
 import os
 from together import Together
