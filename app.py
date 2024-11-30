@@ -1,8 +1,9 @@
 # Import necessary libraries
 import streamlit as st
 import os
+!pip install together
 from together import Together
-from dotenv import load_dotenv
+
 
 os.environ['TOGETHER_API_KEY'] = st.secrets["TOGETHER_API_KEY"]
 
