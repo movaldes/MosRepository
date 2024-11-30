@@ -1,7 +1,7 @@
 # Import necessary libraries
 import streamlit as st
 import os
-pip install together
+pip install git+https://github.com/togethercomputer/together-ai.git
 from together import Together
 
 
