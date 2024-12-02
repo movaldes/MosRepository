@@ -1,7 +1,6 @@
 # Import necessary libraries
 import streamlit as st
 import os
-pip install git+https://github.com/togethercomputer/together-ai.git
 from together import Together
 
 os.environ['TOGETHER_API_KEY'] = st.secrets["TOGETHER_API_KEY"]
